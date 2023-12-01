@@ -1,5 +1,5 @@
 .navigation {
-  background-color: rgb(25, 97, 10);
+  background-color: rgb(31, 141, 9);
   height: 60px;
   display: flex;
 }
@@ -15,7 +15,7 @@
 
 .nav-button {
   background-color: rgb(119,177,3);
-  color: rgb(78, 8, 7);
+  color: rgb(0, 0, 0);
   padding: 5px 10px;
   border-radius: 10px;
   border-width: 2px;
