@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  background-color: rgb(25, 97, 10);
+  color: rgb(255, 255, 255);
+  height: 60px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.tnpw-projekt {
+  display: flex;
+  flex: 3;
+  justify-content: right;
+  margin: 0 5px;
+}
+
+.aktualizace {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.email {
+  display: flex;
+  flex: 1;
+  justify-content:left;
+  margin: 0 5px;
+}

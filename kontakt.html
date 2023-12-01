@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>
+      Kontakt - Itour
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/form.css">
+  </head>
+
+
+  <body class="body">
+
+    <header class="header">
+
+      <div class="left-header">
+        <div class="logo-header" >
+          <img src="photos/Logo240px.png" alt="ITour Logo">
+        </div>
+      </div>
+
+      <div class="right-header">
+ 
+        <h1 class="header-text">ITour</h1>
+      
+      </div>
+
+    </header>
+
+
+
+    <nav class="navigation">
+      <ul class="nav-column">
+        <li class="nav-column"><a href="projekt.html" class="nav-button">Úvod</a></li>
+        <li class="nav-column"><a href="galerie.html" class="nav-button">Galerie</a></li>
+        <li class="nav-column"><a href="destinace.html" class="nav-button">Destinace</a></li>
+        <li class="nav-column"><a href="otazkyARady.html" class="nav-button">Otázky a rady</a></li>
+        <li class="nav-column"><a href="kontakt.html" class="nav-button">Kontakt</a></li>
+      </ul>
+    </nav>
+
+
+    <main>
+
+      <div class="sides"></div>
+
+      <div class="middle">
+        <h2>Napište nám</h2>
+        <h3>E-mail: ITour@gmail.com</h3>
+        <hr>
+        <h3>Zaregistrujte se:</h3>
+
+        <form class="form" onsubmit="showMessage(event)">
+
+          <label for="Jmeno">Jmeno:</label><br>
+          <input type="text" id="Jmeno" name="Jmeno"><br>
+          <label for="Prijmeni">Prijmeni:</label><br>
+          <input type="text" id="Prijmeni" name="Prijmeni"><br>
+          <label for="Tel">Tel:</label><br>
+          <input type="tel" id="Tel" name="Tel"><br>
+          <label for="E-mail">E-mail:</label><br>
+          <input type="email" id="E-mail" name="E-mail"><br>
+          <input type="submit" class="sButton">
+
+        </form>
+
+        <div class="zprava" id="zpravaDiv">Děkujeme za registraci.</div>
+
+
+        
+      </div>
+
+      <div class="sides"></div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="tnpw-projekt">Studenstký zápočtový projekt TNPW1</div>
+      <div class="aktualizace">Datum poslední aktualizace: 29.11.2023</div>
+      <div class="email">ITour@gmail.com</div> 
+    </footer>
+
+    <script>
+      function showMessage(event) {
+        event.preventDefault();
+        var input = document.querySelectorAll('.form input[type="text"], .form input[type="tel"], .form input[type="email"]');
+        var allFilled = true;
+
+        input.forEach(function(input){
+          if (input.value.trim() === '') {
+            allFilled = false;}
+        });
+
+        if (allFilled) {
+          var zpravaDiv = document.getElementById('zpravaDiv');
+        zpravaDiv.style.display = 'block';
+        } else {
+          alert('Vyplňte prosím všechna pole')
+        }
+      }
+
+    </script>
+
+  </body>
+</html>

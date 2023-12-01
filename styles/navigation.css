@@ -1,0 +1,37 @@
+.navigation {
+  background-color: rgb(25, 97, 10);
+  height: 60px;
+  display: flex;
+}
+
+.nav-column {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.nav-button {
+  background-color: rgb(119,177,3);
+  color: rgb(78, 8, 7);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+}
+.nav-button:visited {
+  background-color: rgb(250,203,2);  
+}
+.nav-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.nav-button:active {
+  opacity: 0.75;  
+}
